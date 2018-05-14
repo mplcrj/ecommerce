@@ -1,0 +1,38 @@
+$ git add --all
+warning: LF will be replaced by CRLF in vendor/autoload.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/composer/ClassLoader.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/composer/LICENSE.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/composer/autoload_classmap.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/composer/autoload_namespaces.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/composer/autoload_psr4.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/composer/autoload_real.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/composer/autoload_static.php.
+The file will have its original line endings in your working directory.
+
+Marquito@Marquito-Note MINGW64 /c/xampp/htdocs/ecommerce (master)
+$ git commit -m "autoload hcodebr classes"
+[master b4e735d] autoload hcodebr classes
+ 9 files changed, 809 insertions(+), 6 deletions(-)
+ create mode 100644 arquivos/100 - Configurando Autoload de Nossas Classes/composer dump-autoload
+ create mode 100644 arquivos/Configurando-Autoload-de-Nossas-Classes.zip
+ create mode 100644 arquivos/configurando github.txt
+ create mode 100644 vendor/hcodebr/php-classes/composer.json
+ create mode 100644 vendor/hcodebr/php-classes/src/DB/Sql.php
+
+Marquito@Marquito-Note MINGW64 /c/xampp/htdocs/ecommerce (master)
+$ git push origin master
+Counting objects: 19, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (19/19), 6.59 KiB | 1.65 MiB/s, done.
+Total 19 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas: 100% (7/7), completed with 7 local objects.
+To https://github.com/mplcrj/ecommerce.git
+   0510d77..b4e735d  master -> master
