@@ -1,0 +1,697 @@
+
+Marquito@Marquito-Note MINGW64 /c/xampp/htdocs/ecommerce (master)
+$ git init
+Initialized empty Git repository in C:/xampp/htdocs/ecommerce/.git/
+
+Marquito@Marquito-Note MINGW64 /c/xampp/htdocs/ecommerce (master)
+$ git remote add origin https://github.com/mplcrj/ecommerce.git
+
+Marquito@Marquito-Note MINGW64 /c/xampp/htdocs/ecommerce (master)
+$ git add --all
+warning: LF will be replaced by CRLF in composer.lock.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/autoload.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/composer/ClassLoader.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/composer/LICENSE.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/composer/autoload_classmap.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/composer/autoload_namespaces.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/composer/autoload_psr4.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/composer/autoload_real.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/composer/autoload_static.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/composer/installed.json.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/LICENSE.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/PHPMailerAutoload.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/VERSION.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/class.phpmailer.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/class.phpmaileroauth.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/class.phpmaileroauthgoogle.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/class.pop3.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/class.smtp.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/composer.json.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/composer.lock.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/DKIM.phps.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/code_generator.phps.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/contactform.phps.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/contents.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/contentsutf8.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/exceptions.phps.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/gmail.phps.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/gmail_xoauth.phps.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/mail.phps.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/mailing_list.phps.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/pop_before_smtp.phps.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/scripts/XRegExp.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/scripts/shAutoloader.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/scripts/shBrushPhp.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/scripts/shLegacy.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/send_file_upload.phps.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/send_multiple_file_upload.phps.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/sendmail.phps.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/signed-mail.phps.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/smtp.phps.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/smtp_check.phps.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/smtp_no_auth.phps.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/ssl_options.phps.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/styles/shCore.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/styles/shCoreDefault.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/styles/shCoreDjango.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/styles/shCoreEclipse.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/styles/shCoreEmacs.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/styles/shCoreFadeToGrey.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/styles/shCoreMDUltra.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/styles/shCoreMidnight.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/styles/shCoreRDark.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/styles/shThemeAppleScript.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/styles/shThemeDefault.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/styles/shThemeDjango.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/styles/shThemeEclipse.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/styles/shThemeEmacs.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/styles/shThemeFadeToGrey.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/styles/shThemeMDUltra.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/styles/shThemeMidnight.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/styles/shThemeRDark.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/examples/styles/shThemeVisualStudio.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/extras/EasyPeasyICS.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/extras/README.md.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/extras/htmlfilter.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/extras/ntlm_sasl_client.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/get_oauth_token.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-am.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-ar.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-az.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-be.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-bg.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-ca.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-ch.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-cs.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-da.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-de.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-el.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-eo.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-es.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-et.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-fa.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-fi.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-fo.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-fr.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-gl.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-he.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-hr.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-hu.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-id.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-it.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-ja.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-ka.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-ko.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-lt.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-lv.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-ms.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-nb.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-nl.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-pl.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-pt.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-pt_br.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-ro.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-ru.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-sk.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-sl.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-sr.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-sv.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-tr.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-uk.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-vi.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-zh.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/phpmailer/phpmailer/language/phpmailer.lang-zh_cn.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/.gitignore.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/README.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/composer.json.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/library/Rain/Tpl.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/library/Rain/Tpl/Exception.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/library/Rain/Tpl/IPlugin.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/library/Rain/Tpl/NotFoundException.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/library/Rain/Tpl/Plugin.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/library/Rain/Tpl/Plugin/Compress.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/library/Rain/Tpl/Plugin/ImageResize.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/library/Rain/Tpl/Plugin/PathReplace.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/library/Rain/Tpl/PluginContainer.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/library/Rain/Tpl/SyntaxException.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/bootstrap/bootstrap.min.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/bootstrap/js/bootstrap-alerts.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/bootstrap/js/bootstrap-buttons.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/bootstrap/js/bootstrap-dropdown.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/bootstrap/js/bootstrap-modal.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/bootstrap/js/bootstrap-popover.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/bootstrap/js/bootstrap-scrollspy.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/bootstrap/js/bootstrap-tabs.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/bootstrap/js/bootstrap-twipsy.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/bootstrap/js/less-1.1.5.min.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/bootstrap/lib/bootstrap.less.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/bootstrap/lib/forms.less.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/bootstrap/lib/mixins.less.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/bootstrap/lib/patterns.less.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/bootstrap/lib/reset.less.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/bootstrap/lib/scaffolding.less.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/bootstrap/lib/tables.less.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/bootstrap/lib/type.less.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/bootstrap/lib/variables.less.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/image_resize/style.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/nested_loop/style.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/raintpl3/css/style.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/simple/style.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/templates/test/style.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/tests/Rain/Tpl/PluginContainerTest.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/tests/Rain/Tpl/PluginTest.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/rain/raintpl/tests/Rain/TplTest.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/.htaccess.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/.travis.yml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/LICENSE.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/README.markdown.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/Slim/Environment.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/Slim/Exception/Pass.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/Slim/Exception/RequestSlash.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/Slim/Exception/Stop.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/Slim/Http/Headers.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/Slim/Http/Request.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/Slim/Http/Response.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/Slim/Http/Util.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/Slim/Log.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/Slim/LogWriter.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/Slim/Middleware.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/Slim/Middleware/ContentTypes.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/Slim/Middleware/Flash.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/Slim/Middleware/MethodOverride.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/Slim/Middleware/PrettyExceptions.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/Slim/Middleware/SessionCookie.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/Slim/Route.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/Slim/Router.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/Slim/Slim.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/Slim/View.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/composer.json.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/index.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/phpunit.xml.dist.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/tests/EnvironmentTest.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/tests/Foo.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/tests/Http/HeadersTest.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/tests/Http/RequestTest.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/tests/Http/ResponseTest.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/tests/Http/UtilTest.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/tests/LogTest.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/tests/LogWriterTest.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/tests/Middleware/ContentTypesTest.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/tests/Middleware/FlashTest.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/tests/Middleware/MethodOverrideTest.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/tests/Middleware/PrettyExceptionsTest.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/tests/Middleware/SessionCookieTest.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/tests/MiddlewareTest.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/tests/README.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/tests/RouteTest.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/tests/RouterTest.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/tests/SlimTest.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/tests/ViewTest.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/tests/bootstrap.php.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in vendor/slim/slim/tests/templates/test.php.
+The file will have its original line endings in your working directory.
+
+Marquito@Marquito-Note MINGW64 /c/xampp/htdocs/ecommerce (master)
+$ git commit -m "inicio do projeto"
+[master (root-commit) 0510d77] inicio do projeto
+ 264 files changed, 36757 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 arquivos/Configurando-o-Projeto.zip
+ create mode 100644 arquivos/HCODE-UDEMY-VIRTUAL-HOSTS.pdf
+ create mode 100644 arquivos/db-ecommerce-2018.zip
+ create mode 100644 arquivos/db-ecommerce-Modelagem.zip
+ create mode 100644 arquivos/db_ecommerce.sql
+ create mode 100644 arquivos/db_ecommerce_Modelagem.mwb
+ create mode 100644 composer.json
+ create mode 100644 composer.lock
+ create mode 100644 hosts
+ create mode 100644 httpd-vhosts.conf
+ create mode 100644 index.php
+ create mode 100644 vendor/autoload.php
+ create mode 100644 vendor/composer/ClassLoader.php
+ create mode 100644 vendor/composer/LICENSE
+ create mode 100644 vendor/composer/autoload_classmap.php
+ create mode 100644 vendor/composer/autoload_namespaces.php
+ create mode 100644 vendor/composer/autoload_psr4.php
+ create mode 100644 vendor/composer/autoload_real.php
+ create mode 100644 vendor/composer/autoload_static.php
+ create mode 100644 vendor/composer/installed.json
+ create mode 100644 vendor/phpmailer/phpmailer/LICENSE
+ create mode 100644 vendor/phpmailer/phpmailer/PHPMailerAutoload.php
+ create mode 100644 vendor/phpmailer/phpmailer/VERSION
+ create mode 100644 vendor/phpmailer/phpmailer/class.phpmailer.php
+ create mode 100644 vendor/phpmailer/phpmailer/class.phpmaileroauth.php
+ create mode 100644 vendor/phpmailer/phpmailer/class.phpmaileroauthgoogle.php
+ create mode 100644 vendor/phpmailer/phpmailer/class.pop3.php
+ create mode 100644 vendor/phpmailer/phpmailer/class.smtp.php
+ create mode 100644 vendor/phpmailer/phpmailer/composer.json
+ create mode 100644 vendor/phpmailer/phpmailer/composer.lock
+ create mode 100644 vendor/phpmailer/phpmailer/examples/DKIM.phps
+ create mode 100644 vendor/phpmailer/phpmailer/examples/code_generator.phps
+ create mode 100644 vendor/phpmailer/phpmailer/examples/contactform.phps
+ create mode 100644 vendor/phpmailer/phpmailer/examples/contents.html
+ create mode 100644 vendor/phpmailer/phpmailer/examples/contentsutf8.html
+ create mode 100644 vendor/phpmailer/phpmailer/examples/exceptions.phps
+ create mode 100644 vendor/phpmailer/phpmailer/examples/gmail.phps
+ create mode 100644 vendor/phpmailer/phpmailer/examples/gmail_xoauth.phps
+ create mode 100644 vendor/phpmailer/phpmailer/examples/images/phpmailer.png
+ create mode 100644 vendor/phpmailer/phpmailer/examples/images/phpmailer_mini.png
+ create mode 100644 vendor/phpmailer/phpmailer/examples/index.html
+ create mode 100644 vendor/phpmailer/phpmailer/examples/mail.phps
+ create mode 100644 vendor/phpmailer/phpmailer/examples/mailing_list.phps
+ create mode 100644 vendor/phpmailer/phpmailer/examples/pop_before_smtp.phps
+ create mode 100644 vendor/phpmailer/phpmailer/examples/scripts/XRegExp.js
+ create mode 100644 vendor/phpmailer/phpmailer/examples/scripts/shAutoloader.js
+ create mode 100644 vendor/phpmailer/phpmailer/examples/scripts/shBrushPhp.js
+ create mode 100644 vendor/phpmailer/phpmailer/examples/scripts/shCore.js
+ create mode 100644 vendor/phpmailer/phpmailer/examples/scripts/shLegacy.js
+ create mode 100644 vendor/phpmailer/phpmailer/examples/send_file_upload.phps
+ create mode 100644 vendor/phpmailer/phpmailer/examples/send_multiple_file_upload.phps
+ create mode 100644 vendor/phpmailer/phpmailer/examples/sendmail.phps
+ create mode 100644 vendor/phpmailer/phpmailer/examples/signed-mail.phps
+ create mode 100644 vendor/phpmailer/phpmailer/examples/smtp.phps
+ create mode 100644 vendor/phpmailer/phpmailer/examples/smtp_check.phps
+ create mode 100644 vendor/phpmailer/phpmailer/examples/smtp_no_auth.phps
+ create mode 100644 vendor/phpmailer/phpmailer/examples/ssl_options.phps
+ create mode 100644 vendor/phpmailer/phpmailer/examples/styles/shCore.css
+ create mode 100644 vendor/phpmailer/phpmailer/examples/styles/shCoreDefault.css
+ create mode 100644 vendor/phpmailer/phpmailer/examples/styles/shCoreDjango.css
+ create mode 100644 vendor/phpmailer/phpmailer/examples/styles/shCoreEclipse.css
+ create mode 100644 vendor/phpmailer/phpmailer/examples/styles/shCoreEmacs.css
+ create mode 100644 vendor/phpmailer/phpmailer/examples/styles/shCoreFadeToGrey.css
+ create mode 100644 vendor/phpmailer/phpmailer/examples/styles/shCoreMDUltra.css
+ create mode 100644 vendor/phpmailer/phpmailer/examples/styles/shCoreMidnight.css
+ create mode 100644 vendor/phpmailer/phpmailer/examples/styles/shCoreRDark.css
+ create mode 100644 vendor/phpmailer/phpmailer/examples/styles/shThemeAppleScript.css
+ create mode 100644 vendor/phpmailer/phpmailer/examples/styles/shThemeDefault.css
+ create mode 100644 vendor/phpmailer/phpmailer/examples/styles/shThemeDjango.css
+ create mode 100644 vendor/phpmailer/phpmailer/examples/styles/shThemeEclipse.css
+ create mode 100644 vendor/phpmailer/phpmailer/examples/styles/shThemeEmacs.css
+ create mode 100644 vendor/phpmailer/phpmailer/examples/styles/shThemeFadeToGrey.css
+ create mode 100644 vendor/phpmailer/phpmailer/examples/styles/shThemeMDUltra.css
+ create mode 100644 vendor/phpmailer/phpmailer/examples/styles/shThemeMidnight.css
+ create mode 100644 vendor/phpmailer/phpmailer/examples/styles/shThemeRDark.css
+ create mode 100644 vendor/phpmailer/phpmailer/examples/styles/shThemeVisualStudio.css
+ create mode 100644 vendor/phpmailer/phpmailer/examples/styles/wrapping.png
+ create mode 100644 vendor/phpmailer/phpmailer/extras/EasyPeasyICS.php
+ create mode 100644 vendor/phpmailer/phpmailer/extras/README.md
+ create mode 100644 vendor/phpmailer/phpmailer/extras/htmlfilter.php
+ create mode 100644 vendor/phpmailer/phpmailer/extras/ntlm_sasl_client.php
+ create mode 100644 vendor/phpmailer/phpmailer/get_oauth_token.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-am.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-ar.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-az.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-be.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-bg.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-ca.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-ch.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-cs.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-da.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-de.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-el.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-eo.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-es.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-et.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-fa.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-fi.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-fo.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-fr.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-gl.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-he.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-hr.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-hu.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-id.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-it.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-ja.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-ka.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-ko.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-lt.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-lv.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-ms.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-nb.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-nl.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-pl.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-pt.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-pt_br.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-ro.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-ru.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-sk.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-sl.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-sr.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-sv.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-tr.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-uk.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-vi.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-zh.php
+ create mode 100644 vendor/phpmailer/phpmailer/language/phpmailer.lang-zh_cn.php
+ create mode 100644 vendor/rain/raintpl/.gitignore
+ create mode 100644 vendor/rain/raintpl/README.txt
+ create mode 100644 vendor/rain/raintpl/composer.json
+ create mode 100644 vendor/rain/raintpl/example-all.php
+ create mode 100644 vendor/rain/raintpl/example-bootstrap.php
+ create mode 100644 vendor/rain/raintpl/example-draw-string.php
+ create mode 100644 vendor/rain/raintpl/example-extend-class.php
+ create mode 100644 vendor/rain/raintpl/example-nested-loop.php
+ create mode 100644 vendor/rain/raintpl/example-plugin-img-resize.php
+ create mode 100644 vendor/rain/raintpl/example-simple.php
+ create mode 100644 vendor/rain/raintpl/example-webpage-new.php
+ create mode 100644 vendor/rain/raintpl/example-webpage.php
+ create mode 100644 vendor/rain/raintpl/library/Rain/Tpl.php
+ create mode 100644 vendor/rain/raintpl/library/Rain/Tpl/Exception.php
+ create mode 100644 vendor/rain/raintpl/library/Rain/Tpl/IPlugin.php
+ create mode 100644 vendor/rain/raintpl/library/Rain/Tpl/NotFoundException.php
+ create mode 100644 vendor/rain/raintpl/library/Rain/Tpl/Plugin.php
+ create mode 100644 vendor/rain/raintpl/library/Rain/Tpl/Plugin/Compress.php
+ create mode 100644 vendor/rain/raintpl/library/Rain/Tpl/Plugin/ImageResize.php
+ create mode 100644 vendor/rain/raintpl/library/Rain/Tpl/Plugin/PathReplace.php
+ create mode 100644 vendor/rain/raintpl/library/Rain/Tpl/PluginContainer.php
+ create mode 100644 vendor/rain/raintpl/library/Rain/Tpl/SyntaxException.php
+ create mode 100644 vendor/rain/raintpl/templates/bootstrap/bootstrap.min.css
+ create mode 100644 vendor/rain/raintpl/templates/bootstrap/hero.html
+ create mode 100644 vendor/rain/raintpl/templates/bootstrap/js/bootstrap-alerts.js
+ create mode 100644 vendor/rain/raintpl/templates/bootstrap/js/bootstrap-buttons.js
+ create mode 100644 vendor/rain/raintpl/templates/bootstrap/js/bootstrap-dropdown.js
+ create mode 100644 vendor/rain/raintpl/templates/bootstrap/js/bootstrap-modal.js
+ create mode 100644 vendor/rain/raintpl/templates/bootstrap/js/bootstrap-popover.js
+ create mode 100644 vendor/rain/raintpl/templates/bootstrap/js/bootstrap-scrollspy.js
+ create mode 100644 vendor/rain/raintpl/templates/bootstrap/js/bootstrap-tabs.js
+ create mode 100644 vendor/rain/raintpl/templates/bootstrap/js/bootstrap-twipsy.js
+ create mode 100644 vendor/rain/raintpl/templates/bootstrap/js/less-1.1.5.min.js
+ create mode 100644 vendor/rain/raintpl/templates/bootstrap/lib/bootstrap.less
+ create mode 100644 vendor/rain/raintpl/templates/bootstrap/lib/forms.less
+ create mode 100644 vendor/rain/raintpl/templates/bootstrap/lib/mixins.less
+ create mode 100644 vendor/rain/raintpl/templates/bootstrap/lib/patterns.less
+ create mode 100644 vendor/rain/raintpl/templates/bootstrap/lib/reset.less
+ create mode 100644 vendor/rain/raintpl/templates/bootstrap/lib/scaffolding.less
+ create mode 100644 vendor/rain/raintpl/templates/bootstrap/lib/tables.less
+ create mode 100644 vendor/rain/raintpl/templates/bootstrap/lib/type.less
+ create mode 100644 vendor/rain/raintpl/templates/bootstrap/lib/variables.less
+ create mode 100644 vendor/rain/raintpl/templates/image_resize/img/logo.jpeg
+ create mode 100644 vendor/rain/raintpl/templates/image_resize/img/wysiwyg.jpg
+ create mode 100644 vendor/rain/raintpl/templates/image_resize/page.html
+ create mode 100644 vendor/rain/raintpl/templates/image_resize/style.css
+ create mode 100644 vendor/rain/raintpl/templates/nested_loop/style.css
+ create mode 100644 vendor/rain/raintpl/templates/nested_loop/test.html
+ create mode 100644 vendor/rain/raintpl/templates/raintpl2/img/bottom.gif
+ create mode 100644 vendor/rain/raintpl/templates/raintpl2/img/logo.gif
+ create mode 100644 vendor/rain/raintpl/templates/raintpl2/img/top.gif
+ create mode 100644 vendor/rain/raintpl/templates/raintpl2/page.html
+ create mode 100644 vendor/rain/raintpl/templates/raintpl2/style.css
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/css/style.css
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/bg
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/bg.gif
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/bottom.gif
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/easy.jpg
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/easy_text.jpg
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/fast.jpg
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/fast_text.jpg
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/googlegroup.jpg
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/groups_logo_sm.gif
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/groups_logo_sm.jpg
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/groups_logo_sm.png
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/home_title.jpg
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/list
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/list.jpg
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/logo.gif
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/logo.jpg
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/pencil.png
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/search.gif
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/top.gif
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/useful.jpg
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/useful_text.jpg
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/wysiwyg.jpg
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/img/wysiwyg_text.jpg
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/page.html
+ create mode 100644 vendor/rain/raintpl/templates/raintpl3/subfolder/footer.html
+ create mode 100644 vendor/rain/raintpl/templates/simple/simple_template.html
+ create mode 100644 vendor/rain/raintpl/templates/simple/style.css
+ create mode 100644 vendor/rain/raintpl/templates/test/style.css
+ create mode 100644 vendor/rain/raintpl/templates/test/test.html
+ create mode 100644 vendor/rain/raintpl/tests/Rain/Tpl/PluginContainerTest.php
+ create mode 100644 vendor/rain/raintpl/tests/Rain/Tpl/PluginTest.php
+ create mode 100644 vendor/rain/raintpl/tests/Rain/TplTest.php
+ create mode 100644 vendor/rain/raintpl/tests/Rain/_files/template.html
+ create mode 100644 vendor/slim/slim/.htaccess
+ create mode 100644 vendor/slim/slim/.travis.yml
+ create mode 100644 vendor/slim/slim/LICENSE
+ create mode 100644 vendor/slim/slim/README.markdown
+ create mode 100644 vendor/slim/slim/Slim/Environment.php
+ create mode 100644 vendor/slim/slim/Slim/Exception/Pass.php
+ create mode 100644 vendor/slim/slim/Slim/Exception/RequestSlash.php
+ create mode 100644 vendor/slim/slim/Slim/Exception/Stop.php
+ create mode 100644 vendor/slim/slim/Slim/Http/Headers.php
+ create mode 100644 vendor/slim/slim/Slim/Http/Request.php
+ create mode 100644 vendor/slim/slim/Slim/Http/Response.php
+ create mode 100644 vendor/slim/slim/Slim/Http/Util.php
+ create mode 100644 vendor/slim/slim/Slim/Log.php
+ create mode 100644 vendor/slim/slim/Slim/LogWriter.php
+ create mode 100644 vendor/slim/slim/Slim/Middleware.php
+ create mode 100644 vendor/slim/slim/Slim/Middleware/ContentTypes.php
+ create mode 100644 vendor/slim/slim/Slim/Middleware/Flash.php
+ create mode 100644 vendor/slim/slim/Slim/Middleware/MethodOverride.php
+ create mode 100644 vendor/slim/slim/Slim/Middleware/PrettyExceptions.php
+ create mode 100644 vendor/slim/slim/Slim/Middleware/SessionCookie.php
+ create mode 100644 vendor/slim/slim/Slim/Route.php
+ create mode 100644 vendor/slim/slim/Slim/Router.php
+ create mode 100644 vendor/slim/slim/Slim/Slim.php
+ create mode 100644 vendor/slim/slim/Slim/View.php
+ create mode 100644 vendor/slim/slim/composer.json
+ create mode 100644 vendor/slim/slim/index.php
+ create mode 100644 vendor/slim/slim/phpunit.xml.dist
+ create mode 100644 vendor/slim/slim/tests/EnvironmentTest.php
+ create mode 100644 vendor/slim/slim/tests/Foo.php
+ create mode 100644 vendor/slim/slim/tests/Http/HeadersTest.php
+ create mode 100644 vendor/slim/slim/tests/Http/RequestTest.php
+ create mode 100644 vendor/slim/slim/tests/Http/ResponseTest.php
+ create mode 100644 vendor/slim/slim/tests/Http/UtilTest.php
+ create mode 100644 vendor/slim/slim/tests/LogTest.php
+ create mode 100644 vendor/slim/slim/tests/LogWriterTest.php
+ create mode 100644 vendor/slim/slim/tests/Middleware/ContentTypesTest.php
+ create mode 100644 vendor/slim/slim/tests/Middleware/FlashTest.php
+ create mode 100644 vendor/slim/slim/tests/Middleware/MethodOverrideTest.php
+ create mode 100644 vendor/slim/slim/tests/Middleware/PrettyExceptionsTest.php
+ create mode 100644 vendor/slim/slim/tests/Middleware/SessionCookieTest.php
+ create mode 100644 vendor/slim/slim/tests/MiddlewareTest.php
+ create mode 100644 vendor/slim/slim/tests/README
+ create mode 100644 vendor/slim/slim/tests/RouteTest.php
+ create mode 100644 vendor/slim/slim/tests/RouterTest.php
+ create mode 100644 vendor/slim/slim/tests/SlimTest.php
+ create mode 100644 vendor/slim/slim/tests/ViewTest.php
+ create mode 100644 vendor/slim/slim/tests/bootstrap.php
+ create mode 100644 vendor/slim/slim/tests/templates/test.php
+
+Marquito@Marquito-Note MINGW64 /c/xampp/htdocs/ecommerce (master)
+$ git push origin master
+Counting objects: 304, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (290/290), done.
+Writing objects: 100% (304/304), 1.46 MiB | 148.00 KiB/s, done.
+Total 304 (delta 69), reused 0 (delta 0)
+remote: Resolving deltas: 100% (69/69), done.
+To https://github.com/mplcrj/ecommerce.git
+ * [new branch]      master -> master
+
+Marquito@Marquito-Note MINGW64 /c/xampp/htdocs/ecommerce (master)
+$
