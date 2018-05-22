@@ -64,9 +64,13 @@ $app->get('/admin/users', function() {
 
     User::verifyLogin();
 
+    $users = User::listAll();
+
     $page = new PageAdmin();
 
-    $page->setTpl("users");
+    $page->setTpl("users",array(
+        "users"=>$users
+    ));
 
 });
 
@@ -77,6 +81,12 @@ $app->get('/admin/create', function() {
     $page = new PageAdmin();
 
     $page->setTpl("users-create");
+
+});
+
+$app->get('/admin/users/:iduser/delete', function($iduser) {
+
+    User::verifyLogin();
 
 });
 
@@ -97,12 +107,6 @@ $app->post('/admin/users/create', function() {
 });
 
 $app->post('/admin/users/:iduser', function($iduser) {
-
-    User::verifyLogin();
-
-});
-
-$app->delete('/admin/users/:iduser', function($iduser) {
 
     User::verifyLogin();
 
