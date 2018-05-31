@@ -3,12 +3,14 @@
 namespace Hcode\Model;
 
 use Hcode\DB\Sql;
+use Hcode\Mailer;
 use Hcode\Model;
 use Rain\Tpl\Exception;
 
 class User extends Model {
 
     const SESSION = "User";
+    const SECRET = "HcodePhp7_Secret";
 
     public static function login($login,$password){
         $sql = new Sql();
@@ -121,6 +123,52 @@ class User extends Model {
         $sql->query("call sp_users_delete(:iduser)",array(
             ":iduser"=>$this->getiduser()
         ));
+
+    }
+
+    public static function getForgot($email){
+
+        $sql = new Sql();
+
+        $results = $sql->select("select * from tb_persons a inner join tb_users b using(idperson) where a.desemail = :email", array(
+            ":email"=>$email
+        ));
+
+        if (count($results)=== 0){
+            throw new \Exception("Não foi possível recuperar a senha");
+        }else{
+
+            $data = $results[0];
+
+            $results2 = $sql->select("call sp_userspasswordsrecoveries_create(:iduser,:desip)",array(
+               ":iduser"=>$data["iduser"],
+                "desip"=>$_SERVER["REMOTE_ADDR"]
+            ));
+
+            if (count($results2) === 0){
+                throw new \Exception("Não foi possível recuperar a senha");
+            }else{
+
+                $dataRecovery = $results2[0];
+
+                $iv = random_bytes(openssl_cipher_iv_length('aes-256-cbc'));
+                $code = openssl_encrypt($dataRecovery['idrecovery'], 'aes-256-cbc', User::SECRET, 0, $iv);
+                $result = base64_encode($iv.$code);
+
+                $link = "http://www.hdcocommece.com.br/admin/forgot/reset?code=$code";
+
+                $mailer = new Mailer($data["desemail"],$data["desperson"],"Redefinir Senha da Hcode Store","forgot",array(
+                    "name"=>$data["desperson"],
+                    "link"=>$link
+                ));
+
+                $mailer->send();
+
+                return $data;
+
+            }
+
+        }
 
     }
 
