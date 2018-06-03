@@ -3,10 +3,11 @@
 namespace Hcode;
 
 use Rain\Tpl;
+use PHPMailer;
 
 class Mailer{
 
-    const USERNAME = "mcouto1982@outlook.com";
+    const USERNAME = "mcouto1982@gmail.com";
     const PASSWORD = "<?password?>";
     const NAME_FROM = "Hcode Store";
 
@@ -15,7 +16,7 @@ class Mailer{
     public function __construct($toAdress,$toName,$subject,$tplName,$data = array()){
 
         $config = array(
-            "tpl_dir"       => $_SERVER["DOCUMENT_ROOT"]."/views/mail/",
+            "tpl_dir"       => $_SERVER["DOCUMENT_ROOT"]."/views/email/",
             "cache_dir"     => $_SERVER["DOCUMENT_ROOT"]."/views-cache/",
             "debug"         => false // set to false to improve the speed
         );
@@ -43,13 +44,21 @@ class Mailer{
         $this->mail->SMTPDebug = 0;
 
 //Set the hostname of the mail server
-        $this->mail->Host = 'smtp.live.com';
+        $this->mail->Host = 'smtp.gmail.com';
 // use
 // $mail->Host = gethostbyname('smtp.gmail.com');
 // if your network does not support SMTP over IPv6
 
 //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
         $this->mail->Port = 587;
+
+        $this->mail->SMTPOptions = array(
+            'ssl'=>array(
+                'verify_peer'=>false,
+                'verify_peer_name'=>false,
+                'allow_self_signed'=>true
+            )
+        );
 
 //Set the encryption system to use - ssl (deprecated) or tls
         $this->mail->SMTPSecure = 'tls';
