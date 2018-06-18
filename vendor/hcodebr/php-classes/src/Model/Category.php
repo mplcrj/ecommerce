@@ -74,6 +74,33 @@ class Category extends Model {
         
     }
 
+    public function getProducts($related = true){
+
+        $sql = new Sql();
+
+        if ($related === true){
+
+            return $sql->select("select * from tb_products where idproduct in(
+                                        select idproduct 
+                                        from tb_products a inner join tb_productscategories b using(idproduct) 
+                                        where b.idcategory = :idcategory)",[
+                                            ':idcategory'=>$this->getidcategory()
+                ]
+            );
+
+        }else{
+
+            return $sql->select("select * from tb_products where idproduct not in(
+                                        select idproduct 
+                                        from tb_products a inner join tb_productscategories b using(idproduct) 
+                                        where b.idcategory = :idcategory)",[
+                    ':idcategory'=>$this->getidcategory()
+                ]
+            );
+        }
+
+    }
+
 }
 
 ?>

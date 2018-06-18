@@ -97,14 +97,17 @@ $app->get("/admin/categories/:idcategory/products",function ($idcategory){
     
     $category = new Category();
     
-    $category->get((int)$idcategory);  
+    $category->get((int)$idcategory);
+
+    //var_dump($category->getProducts());
+    //exit;
     
     $page = new PageAdmin();
 
     $page->setTpl("categories-products",[
         'category'=>$category->getValues(),
-        '$productsRelated'=>[],
-        '$productsNotRelated'=>[]
+        '$productsRelated'=>$category->getProducts(),
+        '$productsNotRelated'=>$category->getProducts(false)
     ]);
 
 });
