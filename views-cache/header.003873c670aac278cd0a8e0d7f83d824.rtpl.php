@@ -158,7 +158,8 @@
 		</ul>
 	</div>
 	<!-- ./Slider -->
-</div> <!-- End slider area -->
+</div> 
+<!-- End slider area -->
 
 <div class="promo-area">
 	<div class="zigzag-bottom"></div>
