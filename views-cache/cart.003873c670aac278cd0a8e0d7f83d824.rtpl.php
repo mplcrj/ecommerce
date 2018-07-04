@@ -14,13 +14,13 @@
     <div class="zigzag-bottom"></div>
     <div class="container">
         <div class="row">
-            
+
             <div class="col-md-12">
                 <div class="product-content-right">
                     <div class="woocommerce">
 
                         <form action="/checkout">
-                            
+
                             <div class="alert alert-danger" role="alert">
                             Error!
                             </div>
@@ -41,7 +41,7 @@
 
                                     <tr class="cart_item">
                                         <td class="product-remove">
-                                            <a title="Remova todos os itens" class="remove" href="/cart/{$value.idproduct/remove">x</a> 
+                                            <a title="Remova todos os itens" class="remove" href="/cart/{$value.idproduct/remove">x</a>
                                         </td>
 
                                         <td class="product-thumbnail">
@@ -49,11 +49,11 @@
                                         </td>
 
                                         <td class="product-name">
-                                            <a href="/products/<?php echo htmlspecialchars( $value1["desurl"], ENT_COMPAT, 'UTF-8', FALSE ); ?>"><?php echo htmlspecialchars( $value1["desproduct"], ENT_COMPAT, 'UTF-8', FALSE ); ?></a> 
+                                            <a href="/products/<?php echo htmlspecialchars( $value1["desurl"], ENT_COMPAT, 'UTF-8', FALSE ); ?>"><?php echo htmlspecialchars( $value1["desproduct"], ENT_COMPAT, 'UTF-8', FALSE ); ?></a>
                                         </td>
 
                                         <td class="product-price">
-                                            <span class="amount">R$<?php echo formatPrice($value1["vlprice"]); ?></span> 
+                                            <span class="amount">R$<?php echo formatPrice($value1["vlprice"]); ?></span>
                                         </td>
 
                                         <td class="product-quantity">
@@ -65,12 +65,12 @@
                                         </td>
 
                                         <td class="product-subtotal">
-                                            <span class="amount">R$<?php echo formatPrice($value1["vltotal"]); ?></span> 
+                                            <span class="amount">R$<?php echo formatPrice($value1["vltotal"]); ?></span>
                                         </td>
                                     </tr>
                                     <?php } ?>
 
-                                    
+
                                 </tbody>
                             </table>
 
@@ -79,7 +79,7 @@
                                 <div class="cross-sells">
 
                                     <h2>Cálculo de Frete</h2>
-                                    
+
                                     <div class="coupon">
                                         <label for="cep">CEP:</label>
                                         <input type="text" placeholder="00000-000" value="" id="cep" class="input-text" name="zipcode">
@@ -120,8 +120,8 @@
 
                         </form>
 
-                    </div>                        
-                </div>                    
+                    </div>
+                </div>
             </div>
         </div>
     </div>
