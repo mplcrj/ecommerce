@@ -41,7 +41,7 @@
 
                                     <tr class="cart_item">
                                         <td class="product-remove">
-                                            <a title="Remova todos os itens" class="remove" href="/cart/{$value.idproduct/remove">x</a>
+                                            <a title="Remova todos os itens" class="remove" href="/cart/<?php echo htmlspecialchars( $value1["idproduct"], ENT_COMPAT, 'UTF-8', FALSE ); ?>/remove">x</a>
                                         </td>
 
                                         <td class="product-thumbnail">
