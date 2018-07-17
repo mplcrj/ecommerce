@@ -11,24 +11,26 @@ class User extends Model {
 
     const SESSION = "User";
     const SECRET = "HcodePhp7_Secret";
-    
-    public static function getFromSession(){            
-        
+    const ERROR = "UserError";
+    const ERROR_REGISTER = "UserErrorRegister";
+
+    public static function getFromSession(){
+
         if (isset($_SESSION[User::SESSION]) && (int)$_SESSION[User::SESSION]['iduser'] > 0){
-            
+
             $user = new User();
-            
+
             $user->set(($_SESSION[User::SESSION]));
-            
+
             return $user;
-            
-        }         
-                
+
+        }
+
     }
-    
+
     public static function checkLogin($inadmin = true){
-        
-        if(        
+
+        if(
             !isset($_SESSION[User::SESSION]) //SESSÃO NÃO DEFINIDA
             ||
             !$_SESSION[User::SESSION] //SESSÃO DEFINIDA PORÉM VAZIA
@@ -37,23 +39,23 @@ class User extends Model {
         ){
             return false; //NÃO ESTÁ LOGADO
         }else{
-            
+
             if ($inadmin === true && (bool)$_SESSION[User::SESSION]["inadmin"] === true){
-                
+
                 return false;
-                
+
             }elseif ($inadmin === false) {
-                
+
                 return true;
-                
+
             }else{
-                
+
                 return false;
-                
+
             }
-            
+
         }
-        
+
     }
 
     public static function login($login,$password){
@@ -84,9 +86,11 @@ class User extends Model {
 
     public static function verifyLogin($inadmin = true){
 
-        if (User::checkLogin()){
-            
-            header("Location: /admin/login");
+        if (!User::checkLogin($inadmin)){
+
+            if($inadmin){
+              header("Location: /admin/login");
+            }else header("Location: /login");
 
             exit;
         }
@@ -258,6 +262,28 @@ class User extends Model {
             ":password"=>$password,
             ":iduser"=>$this->getiduser()
         ));
+
+    }
+
+    public static function setError($msg){
+
+        $_SESSION[User::ERROR] = $msg;
+
+    }
+
+    public static function getError(){
+
+        $msg = (isset($_SESSION[User::ERROR]) && $_SESSION[User::ERROR]) ? $_SESSION[User::ERROR] : "";
+
+        User::clearError();
+
+        return $msg;
+
+    }
+
+    public static function clearError(){
+
+        $_SESSION[User::ERROR] = NULL;
 
     }
 

@@ -11,7 +11,7 @@ use Rain\Tpl\Exception;
 class Cart extends Model {
 
     const SESSION = "Cart";
-    const SESSION_ERROR = "CartError";
+    const SESSION_ERROR = "CartError";    
 
     public static function getFromSession(){
 
