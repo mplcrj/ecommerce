@@ -77,9 +77,9 @@ class User extends Model {
 
             $user = new User();
 
-            //$data['desperson'] = utf8_encode($data['desperson']);
+            $data['desperson'] = utf8_encode($data['desperson']);
 
-            $data['deslogin'] = utf8_encode($data['deslogin']);
+            //$data['deslogin'] = utf8_encode($data['deslogin']);
 
             $user->setData($data);
 
