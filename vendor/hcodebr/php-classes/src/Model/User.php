@@ -71,8 +71,15 @@ class User extends Model {
 
         $data = $results[0];
 
+        //print_r($data);
+
         if(password_verify($password,$data["despassword"]) === true){
+
             $user = new User();
+
+            //$data['desperson'] = utf8_encode($data['desperson']);
+
+            $data['deslogin'] = utf8_encode($data['deslogin']);
 
             $user->setData($data);
 
@@ -118,6 +125,10 @@ class User extends Model {
             "iduser"=>$iduser
         ));
 
+        $data = $results[0];
+
+        $data['desperson'] = utf8_encode($data['desperson']);
+
         $this->setData($results[0]);
 
     }
@@ -127,9 +138,9 @@ class User extends Model {
         $sql = new Sql();
 
         $results = $sql->select("call sp_users_save(:desperson,:deslogin,:despassword,:desemail,:nrphone,:inadmin)",array(
-            ":desperson"=>$this->getdesperson(),
+            ":desperson"=>utf8_decode($this->getdesperson()),
             ":deslogin"=>$this->getdeslogin(),
-            ":despassword"=>$this->getdespassword(),
+            ":despassword"=>getPasswordHash($this->getdespassword()),
             ":desemail"=>$this->getdesemail(),
             ":nrphone"=>$this->getnrphone(),
             ":inadmin"=>$this->getinadmin()
@@ -145,7 +156,7 @@ class User extends Model {
 
         $results = $sql->select("call sp_usersupdate_save(:iduser,:desperson,:deslogin,:despassword,:desemail,:nrphone,:inadmin)",array(
             ":iduser"=>$this->getiduser(),
-            ":desperson"=>$this->getdesperson(),
+            ":desperson"=>utf8_decode($this->getdesperson()),
             ":deslogin"=>$this->getdeslogin(),
             ":despassword"=>$this->getdespassword(),
             ":desemail"=>$this->getdesemail(),
@@ -259,7 +270,7 @@ class User extends Model {
         $sql = new Sql();
 
         $sql->query("update tb_users set despassword = :password where iduser = :iduser", array(
-            ":password"=>$password,
+            ":password"=>User::getPasswordHash($password),
             ":iduser"=>$this->getiduser()
         ));
 
@@ -284,6 +295,14 @@ class User extends Model {
     public static function clearError(){
 
         $_SESSION[User::ERROR] = NULL;
+
+    }
+
+    public static function getPasswordHash($password){
+
+      return password_hash($password,PASSAWORD_DEFAULT,[
+        'cost'=>12
+      ]);
 
     }
 
