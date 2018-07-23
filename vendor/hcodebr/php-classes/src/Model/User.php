@@ -20,7 +20,7 @@ class User extends Model {
 
             $user = new User();
 
-            $user->set(($_SESSION[User::SESSION]));
+            $user->setData($_SESSION[User::SESSION]);
 
             return $user;
 
@@ -61,7 +61,7 @@ class User extends Model {
     public static function login($login,$password){
         $sql = new Sql();
 
-        $results = $sql->select("select * from tb_users where deslogin = :login", array(
+        $results = $sql->select("SELECT * FROM tb_users a INNER JOIN tb_persons b ON a.idperson = b.idperson WHERE a.deslogin    = :login", array(
            ":login"=>$login
         ));
 
@@ -137,10 +137,17 @@ class User extends Model {
 
         $sql = new Sql();
 
+        if ( $this->getnrphone() == '' ) {
+
+          $this->setnrphone( null );
+
+       }
+
         $results = $sql->select("call sp_users_save(:desperson,:deslogin,:despassword,:desemail,:nrphone,:inadmin)",array(
             ":desperson"=>utf8_decode($this->getdesperson()),
             ":deslogin"=>$this->getdeslogin(),
-            ":despassword"=>getPasswordHash($this->getdespassword()),
+            //":despassword"=>getPasswordHash($this->getdespassword()),
+            ":despassword" => password_hash( $this->getdespassword(), PASSWORD_DEFAULT, [ "cost" => 12 ] ),
             ":desemail"=>$this->getdesemail(),
             ":nrphone"=>$this->getnrphone(),
             ":inadmin"=>$this->getinadmin()
@@ -303,6 +310,40 @@ class User extends Model {
       return password_hash($password,PASSAWORD_DEFAULT,[
         'cost'=>12
       ]);
+
+    }
+
+    public static function setErrorRegister($msg){
+
+        $_SESSION[User::ERROR_REGISTER] = $msg;
+
+    }
+
+    public static function getErrorRegister(){
+
+        $msg = (isset($_SESSION[User::ERROR_REGISTER]) && $_SESSION[User::ERROR_REGISTER]) ? $_SESSION[User::ERROR_REGISTER] : "";
+
+        User::clearErrorRegister();
+
+        return $msg;
+
+    }
+
+    public static function clearErrorRegister(){
+
+        $_SESSION[User::ERROR_REGISTER] = NULL;
+
+    }
+
+    public static function checkLoginExist($login){
+
+        $sql = new Sql();
+
+        $results = $sql->select("select * from tb_users where deslogin = :deslogin",[
+          'deslogin'=>$login
+        ]);
+
+        return (count($results) > 0);
 
     }
 
