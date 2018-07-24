@@ -61,7 +61,7 @@ class Mailer{
         );
 
 //Set the encryption system to use - ssl (deprecated) or tls
-        $this->mail->SMTPSecure = 'tls';
+        $this->mail->SMTPSecure = 'tls';        
 
 //Whether to use SMTP authentication
         $this->mail->SMTPAuth = true;
