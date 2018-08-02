@@ -243,56 +243,56 @@ class Cart extends Model {
 
         }
 
-        public static function setMsgError($msg){
+    public static function setMsgError($msg){
 
-            $_SESSION[Cart::SESSION_ERROR] = $msg;
+        $_SESSION[Cart::SESSION_ERROR] = $msg;
 
-        }
+    }
 
-        public static function getMsgError(){
+    public static function getMsgError(){
 
-            $msg = (isset($_SESSION[Cart::SESSION_ERROR])) ? $_SESSION[Cart::SESSION_ERROR] : "";
+        $msg = (isset($_SESSION[Cart::SESSION_ERROR])) ? $_SESSION[Cart::SESSION_ERROR] : "";
 
-            Cart::clearMsgError();
+        Cart::clearMsgError();
 
-            return $msg;
+        return $msg;
 
-        }
+    }
 
-        public static function clearMsgError(){
+    public static function clearMsgError(){
 
-            $_SESSION[Cart::SESSION_ERROR] = NULL;
+        $_SESSION[Cart::SESSION_ERROR] = NULL;
 
-        }
+    }
 
-        public function updateFreight(){
+    public function updateFreight(){
 
-          if ($this->getdeszipcode() != '') {
+      if ($this->getdeszipcode() != '') {
 
-            $this->setFreight($this->getdeszipcode());
+        $this->setFreight($this->getdeszipcode());
 
-			    }
+                        }
 
-        }
+    }
 
-        public function getValues(){
+    public function getValues(){
 
-          $this->getCalculateTotal();
+      $this->getCalculateTotal();
 
-          return parent::getValues();
+      return parent::getValues();
 
-        }
+    }
 
-        public function getCalculateTotal(){
+    public function getCalculateTotal(){
 
-          $this->updateFreight();
+      $this->updateFreight();
 
-          $totals = $this->getProductsTotals();
+      $totals = $this->getProductsTotals();
 
-          $this->setvlsubtotal($totals['vlprice']);
-          $this->setvltotal($totals['vlprice'] + $this->getvlfreight());
+      $this->setvlsubtotal($totals['vlprice']);
+      $this->setvltotal($totals['vlprice'] + $this->getvlfreight());
 
-        }
+    }
 
 }
 ?>
