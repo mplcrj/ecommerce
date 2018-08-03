@@ -11,8 +11,8 @@ $app->get('/checkout', function() {
 
   $address = new Address();
   $cart = Cart::getFromSession();
-  
-  if (isset($_GET['zipcode']))$_GET['zipcode'] = $cart->getdeszipcode();
+
+  if (!isset($_GET['zipcode']))$_GET['zipcode'] = $cart->getdeszipcode();
 
   if (isset($_GET['zipcode'])){
 
@@ -25,8 +25,8 @@ $app->get('/checkout', function() {
       $cart->getCalculateTotal();
 
   }
-  
-  if (!$address->getdesaddress()) $address->setdesaddress('');
+
+ if (!$address->getdesaddress()) $address->setdesaddress('');
   if (!$address->getdesnumber()) $address->setdesnumber('');
   if (!$address->getdescomplement()) $address->setdescomplement('');
   if (!$address->getdesdistrict()) $address->setdesdistrict('');
@@ -47,13 +47,13 @@ $app->get('/checkout', function() {
 
 $app->post('/checkout', function(){
 
-  User::verifyLogin(false);  
+  User::verifyLogin(false);
 
   if (!isset($_POST['zipcode']) || $_POST['zipcode'] === ''){
     Address::setMsgError("Informe o CEP.");
     header("Location: /checkout");
     exit;
-  } 
+  }
 
   if (!isset($_POST['desaddress']) || $_POST['desaddress'] === ''){
     Address::setMsgError("Informe o endereço.");
@@ -85,6 +85,8 @@ $app->post('/checkout', function(){
     header("Location: /checkout");
     exit;
   }
+
+  $user = User::getFromSession();
 
   $address = new Address();
 

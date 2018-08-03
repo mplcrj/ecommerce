@@ -6,8 +6,8 @@ use Hcode\DB\Sql;
 use Hcode\Model;
 
 class Address extends Model {
-    
-    const SESSION_ERROR = "AddressError"; 
+
+    const SESSION_ERROR = "AddressError";
 
     public static function getCEP($nrcep){
 
@@ -51,19 +51,19 @@ class Address extends Model {
         $results = $sql->select("CALL sp_addresses_save(:idaddress,:idperson,:desaddress,:descomplement,:descity,:desstate,:descountry,:deszipcode,:desdistrict)",[
           ':idaddress'=> $this->getidaddress(),
           ':idperson'=> $this->getidperson(),
-          ':desaddress'=> $this->getdesaddress(),
-          ':descomplement'=> $this->getdescomplementr(),
-          ':descity'=> $this->getdescity(),
-          ':desstate'=> $this->getdesstate(),
-          ':descountry'=> $this->getdescountry(),
+          ':desaddress'=> utf8_decode($this->getdesaddress()),
+          ':descomplement'=> utf8_decode($this->getdescomplementr()),
+          ':descity'=> utf8_decode($this->getdescity()),
+          ':desstate'=> utf8_decode($this->getdesstate()),
+          ':descountry'=> utf8_decode($this->getdescountry()),
           ':deszipcode'=> $this->getdeszipcode(),
-          ':desdistrict'=> $this->getdesdistrict()
+          ':desdistrict'=> utf8_decode($this->getdesdistrict())
         ]);
 
         if(count($results) > 0) $this->setData($results[0]);
 
     }
-    
+
     public static function setMsgError($msg){
 
         $_SESSION[Address::SESSION_ERROR] = $msg;
