@@ -20,6 +20,7 @@ require_once ("site-login.php");
 require_once ("site-profile.php");
 require_once ("site-cart.php");
 require_once ("site-checkout.php");
+require_once ("site-order.php");  
 
 $app->run();
 
