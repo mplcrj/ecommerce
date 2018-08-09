@@ -48,7 +48,7 @@ class Address extends Model {
 
         $sql = new Sql();
 
-        $results = $sql->select("CALL sp_addresses_save(:idaddress,:idperson,:desaddress,:descomplement,:descity,:desstate,:descountry,:deszipcode,:desdistrict)",[
+        $results = $sql->select("CALL sp_addresses_save(:idaddress,:idperson,:desaddress,:descomplement,:descity,:desstate,:descountry,:deszipcode,:desdistrict,:desnumber)",[
           ':idaddress'=> $this->getidaddress(),
           ':idperson'=> $this->getidperson(),
           ':desaddress'=> utf8_decode($this->getdesaddress()),
@@ -57,7 +57,8 @@ class Address extends Model {
           ':desstate'=> utf8_decode($this->getdesstate()),
           ':descountry'=> utf8_decode($this->getdescountry()),
           ':deszipcode'=> $this->getdeszipcode(),
-          ':desdistrict'=> utf8_decode($this->getdesdistrict())
+          ':desdistrict'=> utf8_decode($this->getdesdistrict()),
+          ":desnumber"=>$this->getdesnumber()
         ]);
 
         if(count($results) > 0) $this->setData($results[0]);

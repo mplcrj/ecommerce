@@ -110,8 +110,17 @@ $app->post('/checkout', function(){
     'idstatus'=>OrderStatus::EM_ABERTO,
     'vltotal'=>$cart->getCalculateTotal(['vlprice']) + $cart->getvlfreight()
   ]);
+  print_r($cart->getidcart());echo"</br>";
+  print_r($address->getidaddress());echo"</br>";
+  print_r($user->getiduser());echo"</br>";
+  print_r('EM_ABERTO');echo"</br>";
+  print_r($cart->getCalculateTotal(['vlprice']) + $cart->getvlfreight());
+  exit;
 
-  $order->save();  
+  $order->save();
+
+  //print_r($order);
+  //exit;
 
   header("Location: /payment/".$order->getidorder());
   //header("Location: /payment");

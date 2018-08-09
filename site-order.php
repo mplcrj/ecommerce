@@ -4,7 +4,7 @@ use Hcode\Page;
 use Hcode\Model\Order;
 use Hcode\Model\User;
 
-$app->get('/order/:idorder', function($idorder) {
+$app->get('/payment/:idorder', function($idorder) {
 
     User::verifyLogin(false);
 
