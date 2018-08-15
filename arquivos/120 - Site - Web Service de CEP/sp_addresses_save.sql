@@ -1,8 +1,9 @@
-DELIMITER $$
-CREATE PROCEDURE `sp_addresses_save`(
+sp_addresses_saveDELIMITER $$
+CREATE OR REPLACE PROCEDURE `sp_addresses_save`(
 pidaddress int(11), 
 pidperson int(11),
 pdesaddress varchar(128),
+pdesnumber varchar(16),
 pdescomplement varchar(32),
 pdescity varchar(32),
 pdesstate varchar(32),
@@ -18,6 +19,7 @@ BEGIN
         SET
 			idperson = pidperson,
             desaddress = pdesaddress,
+            desnumber = pdesnumber,
             descomplement = pdescomplement,
             descity = pdescity,
             desstate = pdesstate,
@@ -28,7 +30,7 @@ BEGIN
         
     ELSE
 		
-		INSERT INTO tb_addresses (idperson, desaddress, descomplement, descity, desstate, descountry, deszipcode, desdistrict)
+		INSERT INTO tb_addresses (idperson, desaddress, desnumber, descomplement, descity, desstate, descountry, deszipcode, desdistrict)
         VALUES(pidperson, pdesaddress, pdescomplement, pdescity, pdesstate, pdescountry, pdeszipcode, pdesdistrict);
         
         SET pidaddress = LAST_INSERT_ID();
