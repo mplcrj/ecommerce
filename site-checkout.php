@@ -28,7 +28,7 @@ $app->get('/checkout', function() {
 
   }
 
- if (!$address->getdesaddress()) $address->setdesaddress('');
+  if (!$address->getdesaddress()) $address->setdesaddress('');
   if (!$address->getdesnumber()) $address->setdesnumber('');
   if (!$address->getdescomplement()) $address->setdescomplement('');
   if (!$address->getdesdistrict()) $address->setdesdistrict('');
@@ -110,6 +110,18 @@ $app->post('/checkout', function(){
     'idstatus'=>OrderStatus::EM_ABERTO,
     'vltotal'=>$cart->getCalculateTotal(['vlprice']) + $cart->getvlfreight()
   ]);
+
+  print_r($cart->getidcart());
+  echo'<br>';
+  print_r($address->getidaddress());
+  echo'<br>';
+  print_r($user->getiduser());
+  echo'<br>';
+  print_r(OrderStatus::EM_ABERTO);
+  echo'<br>';
+  print_r($cart->getCalculateTotal(['vlprice']) + $cart->getvlfreight());
+  echo'<br>';
+  exit;
 
   $order->save();
 
