@@ -100,6 +100,7 @@ $app->post('/checkout', function(){
   $address->save();
 
   $cart = Cart::getFromSession();
+  $cart->getCalculateTotal();
 
   $order = new Order();
 
@@ -108,20 +109,11 @@ $app->post('/checkout', function(){
     'idaddress'=>$address->getidaddress(),
     'iduser'=>$user->getiduser(),
     'idstatus'=>OrderStatus::EM_ABERTO,
-    'vltotal'=>$cart->getCalculateTotal(['vlprice']) + $cart->getvlfreight()
+  /*  'vltotal'=>$cart->getCalculateTotal(['vlprice']) + $cart->getvlfreight()*/
+    'vltotal'=>$cart->getvltotal()
   ]);
 
-  print_r($cart->getidcart());
-  echo'<br>';
-  print_r($address->getidaddress());
-  echo'<br>';
-  print_r($user->getiduser());
-  echo'<br>';
-  print_r(OrderStatus::EM_ABERTO);
-  echo'<br>';
-  print_r($cart->getCalculateTotal(['vlprice']) + $cart->getvlfreight());
-  echo'<br>';
-  exit;
+  //var_dump($order->getValues()); exit;
 
   $order->save();
 
