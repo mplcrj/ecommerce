@@ -11,17 +11,13 @@ class Order extends Model {
 
     $sql = new Sql();
 
-    $results = $sql->select("CALL sp_orders_save(:idcart,:iduser,:idstatus,:idaddress,:vltotal)",[
-      /*':idcart'=>$this->getidcart(),
+    $results = $sql->select("CALL sp_orders_save(:idorder,:idcart,:iduser,:idstatus,:idaddress,:vltotal)",[
+      ':idorder'=>$this->getidorder(),
+      ':idcart'=>$this->getidcart(),
       ':iduser'=>$this->getiduser(),
       ':idstatus'=>$this->getidstatus(),
       ':idaddress'=>$this->getidaddress(),
-      ':vltotal'=>$this->getvltotal()*/
-      ':idcart'=>'29',
-      ':iduser'=>'9',
-      ':idstatus'=>'1',
-      ':idaddress'=>'28',
-      ':vltotal'=>'457.98'
+      ':vltotal'=>$this->getvltotal()      
     ]);
 
     if (count($results) > 0)$this->setData($results[0]);

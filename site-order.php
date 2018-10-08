@@ -18,4 +18,9 @@ $app->get('/order/:idorder', function($idorder) {
 
 });
 
+$app->get('/boleto/:idorder', function($idorder) {
+
+
+});
+
 ?>

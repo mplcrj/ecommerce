@@ -108,16 +108,13 @@ $app->post('/checkout', function(){
     'idcart'=>$cart->getidcart(),
     'idaddress'=>$address->getidaddress(),
     'iduser'=>$user->getiduser(),
-    'idstatus'=>OrderStatus::EM_ABERTO,
-  /*  'vltotal'=>$cart->getCalculateTotal(['vlprice']) + $cart->getvlfreight()*/
+    'idstatus'=>OrderStatus::EM_ABERTO,  
     'vltotal'=>$cart->getvltotal()
-  ]);
-
-  //var_dump($order->getValues()); exit;
+  ]);  
 
   $order->save();
 
-  header("Location: /payment/".$order->getidorder());
+  header("Location: /order/".$order->getidorder());
   exit;
 
 });
