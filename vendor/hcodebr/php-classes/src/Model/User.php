@@ -73,6 +73,9 @@ class User extends Model {
         $data = $results[0];
 
         //print_r($data);
+        //echo '<br>';
+        //print_r($password);
+        //exit;
 
         if(password_verify($password,$data["despassword"]) === true){
 
@@ -84,7 +87,7 @@ class User extends Model {
 
             $user->setData($data);
 
-            $_SESSION[User::SESSION] = $user->getValues();
+            $_SESSION[User::SESSION] = $user->getValues();            
 
             return $user;
 

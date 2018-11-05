@@ -75,7 +75,7 @@ $app->post('/register', function() {
        header("Location: /login");
        exit;
 
-   }
+   }   
 
   $user = new User();
 
